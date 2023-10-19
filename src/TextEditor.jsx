@@ -35,7 +35,7 @@ const TextEditor = () => {
   // This Below code is for the Connection Check
 
   useEffect(() => {
-    const s = io("http://localhost:3001");
+    const s = io("https://pandocs-server.onrender.com/");
     setSocket(s);
     return () => {
       s.disconnect();
