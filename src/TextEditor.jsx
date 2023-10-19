@@ -118,7 +118,7 @@ const TextEditor = () => {
         <button
           className="btn"
           onClick={() => {
-            navigator.clipboard.writeText(window.location.pathname);
+            navigator.clipboard.writeText(window.location.href);
           }}
         >
           {window.location.pathname.slice(11)}
