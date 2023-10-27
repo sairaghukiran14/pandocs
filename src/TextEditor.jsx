@@ -108,7 +108,7 @@ const TextEditor = () => {
       modules: { toolbar: TOOLBAR_OPTIONS },
     });
     q.disable();
-    q.setText("Loading...");
+    q.setText("connecting to server...(wait for few seconds)");
     setQuill(q);
   }, []);
 
