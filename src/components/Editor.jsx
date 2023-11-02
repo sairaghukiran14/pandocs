@@ -26,7 +26,7 @@ const Editor = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
   useEffect(() => {
-    const s = io.connect("http://localhost:8000");
+    const s = io.connect("https://pandocs-server.onrender.com/");
     setSocket(s);
     s.on("receiveMessage", (data) => {
       console.log(data);
