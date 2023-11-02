@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(../src/assets/5683959.jpg);
+  background-size: cover;
+}
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  } */
+
+  .layout-body {
+    height: calc(100% - 70px);
+  }
+
+  .calc {
+    @apply w-[20px] h-[20px] rounded-full absolute m-auto flex justify-center items-center cursor-pointer text-secondary;
+  }
+
+  .node {
+    @apply font-mono p-2 min-w-[100px] max-w-[fit-content] rounded mt-[20px] bg-[20px] relative text-center bg-primary;
+  }
+}
+
+@layer utilities {
+  .wh-10 {
+    @apply w-[10%];
+  }
+  .wh-20 {
+    @apply w-[20%];
+  }
+  .wh-30 {
+    @apply w-[30%];
+  }
+  .wh-40 {
+    @apply w-[40%];
+  }
+  .wh-50 {
+    @apply w-[50%];
+  }
+  .wh-60 {
+    @apply w-[60%];
+  }
+  .wh-70 {
+    @apply w-[70%];
+  }
+  .wh-80 {
+    @apply w-[80%];
+  }
+  .wh-90 {
+    @apply w-[90%];
+  }
+  .wh-100 {
+    @apply w-[100%];
+  }
+  .wh-55 {
+    @apply w-[55%];
+  }
+  .wh-65 {
+    @apply w-[65%];
+  }
+  .wh-75 {
+    @apply w-[75%];
+  }
+  .wh-85 {
+    @apply w-[85%];
+  }
+  .wh-95 {
+    @apply w-[95%];
+  }
+  .pad {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .pad-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .pad-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .pad-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .pad-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .pad-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .pad-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}
+
+@layer colors {
+  .primary {
+    /* @apply stale-900; */
+  }
+}
